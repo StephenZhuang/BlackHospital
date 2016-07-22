@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		774CEFB41D41D44C006784EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CEFB31D41D44C006784EF /* AppDelegate.swift */; };
+		774CEFB61D41D44C006784EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CEFB51D41D44C006784EF /* ViewController.swift */; };
+		774CEFB91D41D44C006784EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774CEFB71D41D44C006784EF /* Main.storyboard */; };
+		774CEFBB1D41D44C006784EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 774CEFBA1D41D44C006784EF /* Assets.xcassets */; };
+		774CEFBE1D41D44C006784EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774CEFBC1D41D44C006784EF /* LaunchScreen.storyboard */; };
+		774CEFC91D41D44C006784EF /* BlackHospitalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CEFC81D41D44C006784EF /* BlackHospitalTests.swift */; };
+		774CEFD41D41D44C006784EF /* BlackHospitalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CEFD31D41D44C006784EF /* BlackHospitalUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		774CEFC51D41D44C006784EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 774CEFA81D41D44C006784EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 774CEFAF1D41D44C006784EF;
+			remoteInfo = BlackHospital;
+		};
+		774CEFD01D41D44C006784EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 774CEFA81D41D44C006784EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 774CEFAF1D41D44C006784EF;
+			remoteInfo = BlackHospital;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		774CEFB01D41D44C006784EF /* BlackHospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackHospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		774CEFB31D41D44C006784EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		774CEFB51D41D44C006784EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		774CEFB81D41D44C006784EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		774CEFBA1D41D44C006784EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		774CEFBD1D41D44C006784EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		774CEFBF1D41D44C006784EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		774CEFC41D41D44C006784EF /* BlackHospitalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackHospitalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		774CEFC81D41D44C006784EF /* BlackHospitalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackHospitalTests.swift; sourceTree = "<group>"; };
+		774CEFCA1D41D44C006784EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		774CEFCF1D41D44C006784EF /* BlackHospitalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackHospitalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		774CEFD31D41D44C006784EF /* BlackHospitalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackHospitalUITests.swift; sourceTree = "<group>"; };
+		774CEFD51D41D44C006784EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		774CEFAD1D41D44C006784EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		774CEFC11D41D44C006784EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		774CEFCC1D41D44C006784EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		774CEFA71D41D44C006784EF = {
+			isa = PBXGroup;
+			children = (
+				774CEFB21D41D44C006784EF /* BlackHospital */,
+				774CEFC71D41D44C006784EF /* BlackHospitalTests */,
+				774CEFD21D41D44C006784EF /* BlackHospitalUITests */,
+				774CEFB11D41D44C006784EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		774CEFB11D41D44C006784EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				774CEFB01D41D44C006784EF /* BlackHospital.app */,
+				774CEFC41D41D44C006784EF /* BlackHospitalTests.xctest */,
+				774CEFCF1D41D44C006784EF /* BlackHospitalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		774CEFB21D41D44C006784EF /* BlackHospital */ = {
+			isa = PBXGroup;
+			children = (
+				774CEFB31D41D44C006784EF /* AppDelegate.swift */,
+				774CEFB51D41D44C006784EF /* ViewController.swift */,
+				774CEFB71D41D44C006784EF /* Main.storyboard */,
+				774CEFBA1D41D44C006784EF /* Assets.xcassets */,
+				774CEFBC1D41D44C006784EF /* LaunchScreen.storyboard */,
+				774CEFBF1D41D44C006784EF /* Info.plist */,
+			);
+			path = BlackHospital;
+			sourceTree = "<group>";
+		};
+		774CEFC71D41D44C006784EF /* BlackHospitalTests */ = {
+			isa = PBXGroup;
+			children = (
+				774CEFC81D41D44C006784EF /* BlackHospitalTests.swift */,
+				774CEFCA1D41D44C006784EF /* Info.plist */,
+			);
+			path = BlackHospitalTests;
+			sourceTree = "<group>";
+		};
+		774CEFD21D41D44C006784EF /* BlackHospitalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				774CEFD31D41D44C006784EF /* BlackHospitalUITests.swift */,
+				774CEFD51D41D44C006784EF /* Info.plist */,
+			);
+			path = BlackHospitalUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		774CEFAF1D41D44C006784EF /* BlackHospital */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 774CEFD81D41D44C006784EF /* Build configuration list for PBXNativeTarget "BlackHospital" */;
+			buildPhases = (
+				774CEFAC1D41D44C006784EF /* Sources */,
+				774CEFAD1D41D44C006784EF /* Frameworks */,
+				774CEFAE1D41D44C006784EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlackHospital;
+			productName = BlackHospital;
+			productReference = 774CEFB01D41D44C006784EF /* BlackHospital.app */;
+			productType = "com.apple.product-type.application";
+		};
+		774CEFC31D41D44C006784EF /* BlackHospitalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 774CEFDB1D41D44C006784EF /* Build configuration list for PBXNativeTarget "BlackHospitalTests" */;
+			buildPhases = (
+				774CEFC01D41D44C006784EF /* Sources */,
+				774CEFC11D41D44C006784EF /* Frameworks */,
+				774CEFC21D41D44C006784EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				774CEFC61D41D44C006784EF /* PBXTargetDependency */,
+			);
+			name = BlackHospitalTests;
+			productName = BlackHospitalTests;
+			productReference = 774CEFC41D41D44C006784EF /* BlackHospitalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		774CEFCE1D41D44C006784EF /* BlackHospitalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 774CEFDE1D41D44C006784EF /* Build configuration list for PBXNativeTarget "BlackHospitalUITests" */;
+			buildPhases = (
+				774CEFCB1D41D44C006784EF /* Sources */,
+				774CEFCC1D41D44C006784EF /* Frameworks */,
+				774CEFCD1D41D44C006784EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				774CEFD11D41D44C006784EF /* PBXTargetDependency */,
+			);
+			name = BlackHospitalUITests;
+			productName = BlackHospitalUITests;
+			productReference = 774CEFCF1D41D44C006784EF /* BlackHospitalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		774CEFA81D41D44C006784EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = StephenZhuang;
+				TargetAttributes = {
+					774CEFAF1D41D44C006784EF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					774CEFC31D41D44C006784EF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 774CEFAF1D41D44C006784EF;
+					};
+					774CEFCE1D41D44C006784EF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 774CEFAF1D41D44C006784EF;
+					};
+				};
+			};
+			buildConfigurationList = 774CEFAB1D41D44C006784EF /* Build configuration list for PBXProject "BlackHospital" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 774CEFA71D41D44C006784EF;
+			productRefGroup = 774CEFB11D41D44C006784EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				774CEFAF1D41D44C006784EF /* BlackHospital */,
+				774CEFC31D41D44C006784EF /* BlackHospitalTests */,
+				774CEFCE1D41D44C006784EF /* BlackHospitalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		774CEFAE1D41D44C006784EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				774CEFBE1D41D44C006784EF /* LaunchScreen.storyboard in Resources */,
+				774CEFBB1D41D44C006784EF /* Assets.xcassets in Resources */,
+				774CEFB91D41D44C006784EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		774CEFC21D41D44C006784EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		774CEFCD1D41D44C006784EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		774CEFAC1D41D44C006784EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				774CEFB61D41D44C006784EF /* ViewController.swift in Sources */,
+				774CEFB41D41D44C006784EF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		774CEFC01D41D44C006784EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				774CEFC91D41D44C006784EF /* BlackHospitalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		774CEFCB1D41D44C006784EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				774CEFD41D41D44C006784EF /* BlackHospitalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		774CEFC61D41D44C006784EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 774CEFAF1D41D44C006784EF /* BlackHospital */;
+			targetProxy = 774CEFC51D41D44C006784EF /* PBXContainerItemProxy */;
+		};
+		774CEFD11D41D44C006784EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 774CEFAF1D41D44C006784EF /* BlackHospital */;
+			targetProxy = 774CEFD01D41D44C006784EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		774CEFB71D41D44C006784EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				774CEFB81D41D44C006784EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		774CEFBC1D41D44C006784EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				774CEFBD1D41D44C006784EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		774CEFD61D41D44C006784EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		774CEFD71D41D44C006784EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		774CEFD91D41D44C006784EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BlackHospital/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.precordium.blackHospital;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		774CEFDA1D41D44C006784EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BlackHospital/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.precordium.blackHospital;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		774CEFDC1D41D44C006784EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BlackHospitalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.precordium.BlackHospitalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlackHospital.app/BlackHospital";
+			};
+			name = Debug;
+		};
+		774CEFDD1D41D44C006784EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BlackHospitalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.precordium.BlackHospitalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlackHospital.app/BlackHospital";
+			};
+			name = Release;
+		};
+		774CEFDF1D41D44C006784EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BlackHospitalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.precordium.BlackHospitalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BlackHospital;
+			};
+			name = Debug;
+		};
+		774CEFE01D41D44C006784EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BlackHospitalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.precordium.BlackHospitalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BlackHospital;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		774CEFAB1D41D44C006784EF /* Build configuration list for PBXProject "BlackHospital" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				774CEFD61D41D44C006784EF /* Debug */,
+				774CEFD71D41D44C006784EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		774CEFD81D41D44C006784EF /* Build configuration list for PBXNativeTarget "BlackHospital" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				774CEFD91D41D44C006784EF /* Debug */,
+				774CEFDA1D41D44C006784EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		774CEFDB1D41D44C006784EF /* Build configuration list for PBXNativeTarget "BlackHospitalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				774CEFDC1D41D44C006784EF /* Debug */,
+				774CEFDD1D41D44C006784EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		774CEFDE1D41D44C006784EF /* Build configuration list for PBXNativeTarget "BlackHospitalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				774CEFDF1D41D44C006784EF /* Debug */,
+				774CEFE01D41D44C006784EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 774CEFA81D41D44C006784EF /* Project object */;
+}
