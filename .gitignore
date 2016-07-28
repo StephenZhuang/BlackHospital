@@ -63,3 +63,8 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
+
+[credential]
+  helper = osxkeychain
+[credential "https://github.com"]
+  username = 379128008@qq.com

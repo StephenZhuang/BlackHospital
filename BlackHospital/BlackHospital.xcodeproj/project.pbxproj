@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		771A10C31D486A94004009D1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771A10C21D486A94004009D1 /* RealmSwift.framework */; };
+		771A10C41D486ABE004009D1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771A10C21D486A94004009D1 /* RealmSwift.framework */; };
+		771A10C51D486ABE004009D1 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 771A10C21D486A94004009D1 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		774771251D49B62400CC26E5 /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774771241D49B62400CC26E5 /* Hospital.swift */; };
+		774A407A1D460EF4008E6246 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774A40791D460EF4008E6246 /* SwiftyJSON.framework */; };
+		774A407B1D460EF4008E6246 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 774A40791D460EF4008E6246 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		774CEFB41D41D44C006784EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CEFB31D41D44C006784EF /* AppDelegate.swift */; };
 		774CEFB61D41D44C006784EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CEFB51D41D44C006784EF /* ViewController.swift */; };
 		774CEFB91D41D44C006784EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774CEFB71D41D44C006784EF /* Main.storyboard */; };
@@ -33,7 +39,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		774A407C1D460EF4008E6246 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				771A10C51D486ABE004009D1 /* RealmSwift.framework in Embed Frameworks */,
+				774A407B1D460EF4008E6246 /* SwiftyJSON.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		771A10C21D486A94004009D1 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		774771241D49B62400CC26E5 /* Hospital.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
+		774A40791D460EF4008E6246 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = ../../Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		774CEFB01D41D44C006784EF /* BlackHospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackHospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		774CEFB31D41D44C006784EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		774CEFB51D41D44C006784EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				771A10C31D486A94004009D1 /* RealmSwift.framework in Frameworks */,
+				774A407A1D460EF4008E6246 /* SwiftyJSON.framework in Frameworks */,
+				771A10C41D486ABE004009D1 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,9 +101,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		771A10C11D486A94004009D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				774A40791D460EF4008E6246 /* SwiftyJSON.framework */,
+				771A10C21D486A94004009D1 /* RealmSwift.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		774CEFA71D41D44C006784EF = {
 			isa = PBXGroup;
 			children = (
+				771A10C11D486A94004009D1 /* Frameworks */,
 				774CEFB21D41D44C006784EF /* BlackHospital */,
 				774CEFC71D41D44C006784EF /* BlackHospitalTests */,
 				774CEFD21D41D44C006784EF /* BlackHospitalUITests */,
@@ -99,6 +136,7 @@
 			children = (
 				774CEFB31D41D44C006784EF /* AppDelegate.swift */,
 				774CEFB51D41D44C006784EF /* ViewController.swift */,
+				774771241D49B62400CC26E5 /* Hospital.swift */,
 				774CEFB71D41D44C006784EF /* Main.storyboard */,
 				774CEFBA1D41D44C006784EF /* Assets.xcassets */,
 				774CEFBC1D41D44C006784EF /* LaunchScreen.storyboard */,
@@ -135,6 +173,7 @@
 				774CEFAC1D41D44C006784EF /* Sources */,
 				774CEFAD1D41D44C006784EF /* Frameworks */,
 				774CEFAE1D41D44C006784EF /* Resources */,
+				774A407C1D460EF4008E6246 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +297,7 @@
 			files = (
 				774CEFB61D41D44C006784EF /* ViewController.swift in Sources */,
 				774CEFB41D41D44C006784EF /* AppDelegate.swift in Sources */,
+				774771251D49B62400CC26E5 /* Hospital.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +439,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BlackHospital/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = BlackHospital/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.precordium.blackHospital;
@@ -410,6 +455,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BlackHospital/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = BlackHospital/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.precordium.blackHospital;
@@ -482,6 +532,7 @@
 				774CEFDA1D41D44C006784EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		774CEFDB1D41D44C006784EF /* Build configuration list for PBXNativeTarget "BlackHospitalTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +541,7 @@
 				774CEFDD1D41D44C006784EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		774CEFDE1D41D44C006784EF /* Build configuration list for PBXNativeTarget "BlackHospitalUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +550,7 @@
 				774CEFE01D41D44C006784EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
