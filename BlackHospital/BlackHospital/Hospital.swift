@@ -2,7 +2,7 @@
 //  Hospital.swift
 //  BlackHospital
 //
-//  Created by Stephen Zhuang on 16/7/28.
+//  Created by Stephen Zhuang on 16/7/29.
 //  Copyright © 2016年 StephenZhuang. All rights reserved.
 //
 
@@ -16,4 +16,7 @@ class Hospital: Object {
 //  override static func ignoredProperties() -> [String] {
 //    return []
 //  }
+    dynamic var name: String = ""
+    dynamic var lat: Float = 0
+    dynamic var lng: Float = 0
 }

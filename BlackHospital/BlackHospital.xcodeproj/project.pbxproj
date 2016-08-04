@@ -7,12 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		771A10C31D486A94004009D1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771A10C21D486A94004009D1 /* RealmSwift.framework */; };
-		771A10C41D486ABE004009D1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771A10C21D486A94004009D1 /* RealmSwift.framework */; };
-		771A10C51D486ABE004009D1 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 771A10C21D486A94004009D1 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		774771251D49B62400CC26E5 /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774771241D49B62400CC26E5 /* Hospital.swift */; };
-		774A407A1D460EF4008E6246 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774A40791D460EF4008E6246 /* SwiftyJSON.framework */; };
-		774A407B1D460EF4008E6246 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 774A40791D460EF4008E6246 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4E099797D28CC8FDF0EB136F /* Pods_BlackHospital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4EA307C0ADB0297394600DB /* Pods_BlackHospital.framework */; };
+		773F1BE11D4AE511007C7FCE /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773F1BE01D4AE511007C7FCE /* Hospital.swift */; };
+		774771271D49BD0100CC26E5 /* hospital.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 774771261D49BD0100CC26E5 /* hospital.geojson */; };
 		774CEFB41D41D44C006784EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CEFB31D41D44C006784EF /* AppDelegate.swift */; };
 		774CEFB61D41D44C006784EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CEFB51D41D44C006784EF /* ViewController.swift */; };
 		774CEFB91D41D44C006784EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774CEFB71D41D44C006784EF /* Main.storyboard */; };
@@ -20,6 +17,7 @@
 		774CEFBE1D41D44C006784EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774CEFBC1D41D44C006784EF /* LaunchScreen.storyboard */; };
 		774CEFC91D41D44C006784EF /* BlackHospitalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CEFC81D41D44C006784EF /* BlackHospitalTests.swift */; };
 		774CEFD41D41D44C006784EF /* BlackHospitalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CEFD31D41D44C006784EF /* BlackHospitalUITests.swift */; };
+		77535B281D52EE2B00391008 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77535B271D52EE2B00391008 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +44,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				771A10C51D486ABE004009D1 /* RealmSwift.framework in Embed Frameworks */,
-				774A407B1D460EF4008E6246 /* SwiftyJSON.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,9 +51,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		771A10C21D486A94004009D1 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
-		774771241D49B62400CC26E5 /* Hospital.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
-		774A40791D460EF4008E6246 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = ../../Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		773F1BE01D4AE511007C7FCE /* Hospital.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
+		774771261D49BD0100CC26E5 /* hospital.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hospital.geojson; sourceTree = "<group>"; };
 		774CEFB01D41D44C006784EF /* BlackHospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackHospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		774CEFB31D41D44C006784EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		774CEFB51D41D44C006784EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +66,10 @@
 		774CEFCF1D41D44C006784EF /* BlackHospitalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackHospitalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		774CEFD31D41D44C006784EF /* BlackHospitalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackHospitalUITests.swift; sourceTree = "<group>"; };
 		774CEFD51D41D44C006784EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77535B271D52EE2B00391008 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B4EA307C0ADB0297394600DB /* Pods_BlackHospital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackHospital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1FC1E9893A934C167E3AA6F /* Pods-BlackHospital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHospital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlackHospital/Pods-BlackHospital.debug.xcconfig"; sourceTree = "<group>"; };
+		D15CE3153B54FE688225F024 /* Pods-BlackHospital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHospital.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlackHospital/Pods-BlackHospital.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				771A10C31D486A94004009D1 /* RealmSwift.framework in Frameworks */,
-				774A407A1D460EF4008E6246 /* SwiftyJSON.framework in Frameworks */,
-				771A10C41D486ABE004009D1 /* RealmSwift.framework in Frameworks */,
+				4E099797D28CC8FDF0EB136F /* Pods_BlackHospital.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,8 +101,7 @@
 		771A10C11D486A94004009D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				774A40791D460EF4008E6246 /* SwiftyJSON.framework */,
-				771A10C21D486A94004009D1 /* RealmSwift.framework */,
+				B4EA307C0ADB0297394600DB /* Pods_BlackHospital.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -118,6 +114,7 @@
 				774CEFC71D41D44C006784EF /* BlackHospitalTests */,
 				774CEFD21D41D44C006784EF /* BlackHospitalUITests */,
 				774CEFB11D41D44C006784EF /* Products */,
+				B3FFBA66055B774D9960C604 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,13 +131,15 @@
 		774CEFB21D41D44C006784EF /* BlackHospital */ = {
 			isa = PBXGroup;
 			children = (
+				774771261D49BD0100CC26E5 /* hospital.geojson */,
 				774CEFB31D41D44C006784EF /* AppDelegate.swift */,
 				774CEFB51D41D44C006784EF /* ViewController.swift */,
-				774771241D49B62400CC26E5 /* Hospital.swift */,
 				774CEFB71D41D44C006784EF /* Main.storyboard */,
 				774CEFBA1D41D44C006784EF /* Assets.xcassets */,
 				774CEFBC1D41D44C006784EF /* LaunchScreen.storyboard */,
 				774CEFBF1D41D44C006784EF /* Info.plist */,
+				773F1BE01D4AE511007C7FCE /* Hospital.swift */,
+				77535B271D52EE2B00391008 /* MapViewController.swift */,
 			);
 			path = BlackHospital;
 			sourceTree = "<group>";
@@ -163,6 +162,15 @@
 			path = BlackHospitalUITests;
 			sourceTree = "<group>";
 		};
+		B3FFBA66055B774D9960C604 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1FC1E9893A934C167E3AA6F /* Pods-BlackHospital.debug.xcconfig */,
+				D15CE3153B54FE688225F024 /* Pods-BlackHospital.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,10 +178,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 774CEFD81D41D44C006784EF /* Build configuration list for PBXNativeTarget "BlackHospital" */;
 			buildPhases = (
+				05B111813D5E50B602926523 /* [CP] Check Pods Manifest.lock */,
 				774CEFAC1D41D44C006784EF /* Sources */,
 				774CEFAD1D41D44C006784EF /* Frameworks */,
 				774CEFAE1D41D44C006784EF /* Resources */,
 				774A407C1D460EF4008E6246 /* Embed Frameworks */,
+				1C05BC449863AD086D681B10 /* [CP] Embed Pods Frameworks */,
+				08A4B06C90455CB25098365D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,6 +282,7 @@
 				774CEFBE1D41D44C006784EF /* LaunchScreen.storyboard in Resources */,
 				774CEFBB1D41D44C006784EF /* Assets.xcassets in Resources */,
 				774CEFB91D41D44C006784EF /* Main.storyboard in Resources */,
+				774771271D49BD0100CC26E5 /* hospital.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +302,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05B111813D5E50B602926523 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		08A4B06C90455CB25098365D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlackHospital/Pods-BlackHospital-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C05BC449863AD086D681B10 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlackHospital/Pods-BlackHospital-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		774CEFAC1D41D44C006784EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -297,7 +357,8 @@
 			files = (
 				774CEFB61D41D44C006784EF /* ViewController.swift in Sources */,
 				774CEFB41D41D44C006784EF /* AppDelegate.swift in Sources */,
-				774771251D49B62400CC26E5 /* Hospital.swift in Sources */,
+				773F1BE11D4AE511007C7FCE /* Hospital.swift in Sources */,
+				77535B281D52EE2B00391008 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,11 +498,11 @@
 		};
 		774CEFD91D41D44C006784EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1FC1E9893A934C167E3AA6F /* Pods-BlackHospital.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/BlackHospital/Frameworks",
 					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = BlackHospital/Info.plist;
@@ -453,11 +514,11 @@
 		};
 		774CEFDA1D41D44C006784EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D15CE3153B54FE688225F024 /* Pods-BlackHospital.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/BlackHospital/Frameworks",
 					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = BlackHospital/Info.plist;
