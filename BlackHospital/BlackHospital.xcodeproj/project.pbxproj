@@ -17,6 +17,7 @@
 		774CEFBE1D41D44C006784EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774CEFBC1D41D44C006784EF /* LaunchScreen.storyboard */; };
 		774CEFC91D41D44C006784EF /* BlackHospitalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CEFC81D41D44C006784EF /* BlackHospitalTests.swift */; };
 		774CEFD41D41D44C006784EF /* BlackHospitalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CEFD31D41D44C006784EF /* BlackHospitalUITests.swift */; };
+		775066411D5443C8007945DC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775066401D5443C8007945DC /* MapKit.framework */; };
 		77535B281D52EE2B00391008 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77535B271D52EE2B00391008 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		774CEFCF1D41D44C006784EF /* BlackHospitalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackHospitalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		774CEFD31D41D44C006784EF /* BlackHospitalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackHospitalUITests.swift; sourceTree = "<group>"; };
 		774CEFD51D41D44C006784EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		775066401D5443C8007945DC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		77535B271D52EE2B00391008 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B4EA307C0ADB0297394600DB /* Pods_BlackHospital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackHospital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1FC1E9893A934C167E3AA6F /* Pods-BlackHospital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHospital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlackHospital/Pods-BlackHospital.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				775066411D5443C8007945DC /* MapKit.framework in Frameworks */,
 				4E099797D28CC8FDF0EB136F /* Pods_BlackHospital.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +104,7 @@
 		771A10C11D486A94004009D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				775066401D5443C8007945DC /* MapKit.framework */,
 				B4EA307C0ADB0297394600DB /* Pods_BlackHospital.framework */,
 			);
 			path = Frameworks;
@@ -243,6 +247,11 @@
 				TargetAttributes = {
 					774CEFAF1D41D44C006784EF = {
 						CreatedOnToolsVersion = 7.3.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					774CEFC31D41D44C006784EF = {
 						CreatedOnToolsVersion = 7.3.1;

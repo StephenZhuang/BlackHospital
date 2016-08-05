@@ -32,9 +32,6 @@ class ViewController: UIViewController {
         
         print(json)
         
-//        var config = Realm.Configuration()
-//        config.fileURL = config.fileURL!.URLByDeletingLastPathComponent?.URLByAppendingPathComponent("BlackHospital.realm")
-//        Realm.Configuration.defaultConfiguration = config
         
         let realm = try! Realm()
         
