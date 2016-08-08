@@ -17,6 +17,6 @@ class Hospital: Object {
 //    return []
 //  }
     dynamic var name: String = ""
-    dynamic var lat: Float = 0
-    dynamic var lng: Float = 0
+    dynamic var lat: Double = 0
+    dynamic var lng: Double = 0
 }
