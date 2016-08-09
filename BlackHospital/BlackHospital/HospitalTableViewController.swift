@@ -78,7 +78,7 @@ class HospitalTableViewController: UITableViewController, UISearchBarDelegate, U
         }
         let image = UIImage(named: "60")
         let url = NSURL(string: "http://finance.ifeng.com/a/20160504/14362042_0.shtml")
-        let string = ("凤凰网曝光"+(hospital?.name)!)+"属于莆田系医院，小伙伴们千万不要去！"
+        let string = (hospital?.name)!+"属于莆田系医院，小伙伴们千万不要去！"
         let activityController = UIActivityViewController(activityItems: [image! ,url!,string], applicationActivities: nil)
         self.presentViewController(activityController, animated: true, completion: nil)
     }
@@ -119,23 +119,6 @@ class HospitalTableViewController: UITableViewController, UISearchBarDelegate, U
     }
     */
     
-    //MARK: searchbar delegate
-//    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
-//        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
-//            //需要长时间处理的代码
-//            let arr = NSMutableArray()
-//            for hospital in self.hospitals {
-//                if (hospital.name as NSString).containsString(searchText) {
-//                    arr.addObject(hospital)
-//                }
-//            }
-//            dispatch_async(dispatch_get_main_queue(), {
-//                //需要主线程执行的代码
-//                self.searchResults = arr
-//            })
-//        })
-//        print(searchText)
-//    }
     
     func updateSearchResultsForSearchController(searchController: UISearchController) {
         let searchText = searchController.searchBar.text

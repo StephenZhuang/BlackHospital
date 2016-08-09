@@ -100,6 +100,7 @@ class MapViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
             pinView!.animatesDrop = true
 //            pinView!.pinTintColor = UIColor.purpleColor()
             pinView!.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure)
+            
         }
         else {
             pinView!.annotation = annotation
@@ -129,6 +130,13 @@ class MapViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
         }
     }
     
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        let image = UIImage(named: "60")
+        let url = NSURL(string: "http://finance.ifeng.com/a/20160504/14362042_0.shtml")
+        let string = (view.annotation?.title!)!+"属于莆田系医院，小伙伴们千万不要去！"
+        let activityController = UIActivityViewController(activityItems: [image! ,url!,string], applicationActivities: nil)
+        self.presentViewController(activityController, animated: true, completion: nil)
+    }
 
     
     // MARK: - Navigation
