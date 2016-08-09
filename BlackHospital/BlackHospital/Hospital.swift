@@ -19,4 +19,8 @@ class Hospital: Object {
     dynamic var name: String = ""
     dynamic var lat: Double = 0
     dynamic var lng: Double = 0
+    
+    internal func shareToWeixin() {
+        
+    }
 }

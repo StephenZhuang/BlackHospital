@@ -15,6 +15,7 @@ class HospitalTableViewController: UITableViewController, UISearchBarDelegate, U
     var hospitals: Results<Hospital>!
     var searchResults = Array<Hospital>()
     var searchController: UISearchController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -66,6 +67,20 @@ class HospitalTableViewController: UITableViewController, UISearchBarDelegate, U
         // Configure the cell...
 
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var hospital: Hospital?
+        if searchController.active {
+            hospital = searchResults[indexPath.row]
+        } else {
+            hospital = hospitals[indexPath.row]
+        }
+        let image = UIImage(named: "60")
+        let url = NSURL(string: "http://finance.ifeng.com/a/20160504/14362042_0.shtml")
+        let string = ("凤凰网曝光"+(hospital?.name)!)+"属于莆田系医院，小伙伴们千万不要去！"
+        let activityController = UIActivityViewController(activityItems: [image! ,url!,string], applicationActivities: nil)
+        self.presentViewController(activityController, animated: true, completion: nil)
     }
     
 
@@ -124,7 +139,6 @@ class HospitalTableViewController: UITableViewController, UISearchBarDelegate, U
     
     func updateSearchResultsForSearchController(searchController: UISearchController) {
         let searchText = searchController.searchBar.text
-//        let predicate = NSPredicate(format: "SELF CONTAINS[c] %@", searchText!)
         
         var arr = Array<Hospital>()
         for hospital in self.hospitals {

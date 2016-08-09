@@ -99,7 +99,7 @@ class MapViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
             pinView!.canShowCallout = true
             pinView!.animatesDrop = true
 //            pinView!.pinTintColor = UIColor.purpleColor()
-//            pinView!.rightCalloutAccessoryView = UIButton.buttonWithType(.DetailDisclosure) as UIButton
+            pinView!.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure)
         }
         else {
             pinView!.annotation = annotation

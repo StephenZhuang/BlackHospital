@@ -55,6 +55,7 @@
 		773F1BE01D4AE511007C7FCE /* Hospital.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
 		7743F6941D58393A00FBA99E /* HospitalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitalTableViewController.swift; sourceTree = "<group>"; };
 		774771261D49BD0100CC26E5 /* hospital.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hospital.geojson; sourceTree = "<group>"; };
+		774776301D597253002CBC4E /* BlackHospital-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlackHospital-Bridging-Header.h"; sourceTree = "<group>"; };
 		774CEFB01D41D44C006784EF /* BlackHospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackHospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		774CEFB31D41D44C006784EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		774CEFB81D41D44C006784EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +70,11 @@
 		774CEFD51D41D44C006784EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		775066401D5443C8007945DC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		77535B271D52EE2B00391008 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		77D742E71D597F0A00409E2C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		77D742E91D597F1600409E2C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		77D742EB1D597F2300409E2C /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		77D742ED1D597F6000409E2C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		77D742EF1D5980A600409E2C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		B4EA307C0ADB0297394600DB /* Pods_BlackHospital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackHospital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1FC1E9893A934C167E3AA6F /* Pods-BlackHospital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHospital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlackHospital/Pods-BlackHospital.debug.xcconfig"; sourceTree = "<group>"; };
 		D15CE3153B54FE688225F024 /* Pods-BlackHospital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHospital.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlackHospital/Pods-BlackHospital.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +110,11 @@
 		771A10C11D486A94004009D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				77D742EF1D5980A600409E2C /* CoreTelephony.framework */,
+				77D742ED1D597F6000409E2C /* libc++.tbd */,
+				77D742EB1D597F2300409E2C /* libsqlite3.0.tbd */,
+				77D742E91D597F1600409E2C /* libz.tbd */,
+				77D742E71D597F0A00409E2C /* SystemConfiguration.framework */,
 				775066401D5443C8007945DC /* MapKit.framework */,
 				B4EA307C0ADB0297394600DB /* Pods_BlackHospital.framework */,
 			);
@@ -144,6 +155,7 @@
 				773F1BE01D4AE511007C7FCE /* Hospital.swift */,
 				77535B271D52EE2B00391008 /* MapViewController.swift */,
 				7743F6941D58393A00FBA99E /* HospitalTableViewController.swift */,
+				774776301D597253002CBC4E /* BlackHospital-Bridging-Header.h */,
 			);
 			path = BlackHospital;
 			sourceTree = "<group>";
@@ -513,8 +525,13 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BlackHospital/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BlackHospital/WeixinSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.precordium.blackHospital;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/BlackHospital/BlackHospital-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -526,8 +543,13 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BlackHospital/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BlackHospital/WeixinSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.precordium.blackHospital;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/BlackHospital/BlackHospital-Bridging-Header.h";
 			};
 			name = Release;
 		};
