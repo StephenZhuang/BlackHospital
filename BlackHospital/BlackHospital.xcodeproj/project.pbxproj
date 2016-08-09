@@ -19,6 +19,8 @@
 		774CEFD41D41D44C006784EF /* BlackHospitalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CEFD31D41D44C006784EF /* BlackHospitalUITests.swift */; };
 		775066411D5443C8007945DC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775066401D5443C8007945DC /* MapKit.framework */; };
 		77535B281D52EE2B00391008 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77535B271D52EE2B00391008 /* MapViewController.swift */; };
+		77D742F41D59B07D00409E2C /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D742F31D59B07D00409E2C /* AboutViewController.swift */; };
+		77D742F61D59B82600409E2C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D742F51D59B82600409E2C /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,11 +72,8 @@
 		774CEFD51D41D44C006784EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		775066401D5443C8007945DC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		77535B271D52EE2B00391008 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		77D742E71D597F0A00409E2C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		77D742E91D597F1600409E2C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		77D742EB1D597F2300409E2C /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
-		77D742ED1D597F6000409E2C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		77D742EF1D5980A600409E2C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		77D742F31D59B07D00409E2C /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		77D742F51D59B82600409E2C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		B4EA307C0ADB0297394600DB /* Pods_BlackHospital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackHospital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1FC1E9893A934C167E3AA6F /* Pods-BlackHospital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHospital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlackHospital/Pods-BlackHospital.debug.xcconfig"; sourceTree = "<group>"; };
 		D15CE3153B54FE688225F024 /* Pods-BlackHospital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHospital.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlackHospital/Pods-BlackHospital.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77D742F61D59B82600409E2C /* MessageUI.framework in Frameworks */,
 				775066411D5443C8007945DC /* MapKit.framework in Frameworks */,
 				4E099797D28CC8FDF0EB136F /* Pods_BlackHospital.framework in Frameworks */,
 			);
@@ -110,11 +110,7 @@
 		771A10C11D486A94004009D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				77D742EF1D5980A600409E2C /* CoreTelephony.framework */,
-				77D742ED1D597F6000409E2C /* libc++.tbd */,
-				77D742EB1D597F2300409E2C /* libsqlite3.0.tbd */,
-				77D742E91D597F1600409E2C /* libz.tbd */,
-				77D742E71D597F0A00409E2C /* SystemConfiguration.framework */,
+				77D742F51D59B82600409E2C /* MessageUI.framework */,
 				775066401D5443C8007945DC /* MapKit.framework */,
 				B4EA307C0ADB0297394600DB /* Pods_BlackHospital.framework */,
 			);
@@ -156,6 +152,7 @@
 				77535B271D52EE2B00391008 /* MapViewController.swift */,
 				7743F6941D58393A00FBA99E /* HospitalTableViewController.swift */,
 				774776301D597253002CBC4E /* BlackHospital-Bridging-Header.h */,
+				77D742F31D59B07D00409E2C /* AboutViewController.swift */,
 			);
 			path = BlackHospital;
 			sourceTree = "<group>";
@@ -379,6 +376,7 @@
 				774CEFB41D41D44C006784EF /* AppDelegate.swift in Sources */,
 				7743F6951D58393A00FBA99E /* HospitalTableViewController.swift in Sources */,
 				773F1BE11D4AE511007C7FCE /* Hospital.swift in Sources */,
+				77D742F41D59B07D00409E2C /* AboutViewController.swift in Sources */,
 				77535B281D52EE2B00391008 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
