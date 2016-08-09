@@ -8,6 +8,7 @@
 
 import UIKit
 import MessageUI
+import VTAcknowledgementsViewController
 
 class AboutViewController: UITableViewController, MFMailComposeViewControllerDelegate {
 
@@ -21,7 +22,7 @@ class AboutViewController: UITableViewController, MFMailComposeViewControllerDel
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 3
+        return 2
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -72,7 +73,10 @@ class AboutViewController: UITableViewController, MFMailComposeViewControllerDel
                 self.presentViewController(alert, animated: true, completion: nil)
             }
         case 2:
-            print("2")
+            let vc = VTAcknowledgementsViewController(fileNamed: "Pods-BlackHospital-acknowledgements")
+            vc?.headerText = "感谢开源社区的贡献"
+            self.navigationController?.pushViewController(vc!, animated: true)
+            
         default:
             break
         }
