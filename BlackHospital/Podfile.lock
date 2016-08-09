@@ -1,0 +1,23 @@
+PODS:
+  - Realm (1.0.2):
+    - Realm/Headers (= 1.0.2)
+  - Realm/Headers (1.0.2)
+  - RealmSwift (1.0.2):
+    - Realm (= 1.0.2)
+  - SwiftyJSON (2.3.2)
+  - VTAcknowledgementsViewController (1.1)
+
+DEPENDENCIES:
+  - RealmSwift
+  - SwiftyJSON
+  - VTAcknowledgementsViewController
+
+SPEC CHECKSUMS:
+  Realm: 9d5c46a4d7d27958530a8dfc58f63a99e5c2cba3
+  RealmSwift: 82f3ac5e24530143dddfde2033acc0d308f27d96
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  VTAcknowledgementsViewController: 44da49d57a1dbf414e653688793a130d24af151e
+
+PODFILE CHECKSUM: fda39071764e2514db616da611d4a45b3a8031dc
+
+COCOAPODS: 1.0.1
