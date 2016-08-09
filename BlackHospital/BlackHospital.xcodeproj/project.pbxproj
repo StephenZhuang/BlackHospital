@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4E099797D28CC8FDF0EB136F /* Pods_BlackHospital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4EA307C0ADB0297394600DB /* Pods_BlackHospital.framework */; };
 		773F1BE11D4AE511007C7FCE /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773F1BE01D4AE511007C7FCE /* Hospital.swift */; };
+		7743F6951D58393A00FBA99E /* HospitalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7743F6941D58393A00FBA99E /* HospitalTableViewController.swift */; };
 		774771271D49BD0100CC26E5 /* hospital.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 774771261D49BD0100CC26E5 /* hospital.geojson */; };
 		774CEFB41D41D44C006784EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CEFB31D41D44C006784EF /* AppDelegate.swift */; };
 		774CEFB91D41D44C006784EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774CEFB71D41D44C006784EF /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		773F1BE01D4AE511007C7FCE /* Hospital.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
+		7743F6941D58393A00FBA99E /* HospitalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitalTableViewController.swift; sourceTree = "<group>"; };
 		774771261D49BD0100CC26E5 /* hospital.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hospital.geojson; sourceTree = "<group>"; };
 		774CEFB01D41D44C006784EF /* BlackHospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackHospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		774CEFB31D41D44C006784EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				774CEFBF1D41D44C006784EF /* Info.plist */,
 				773F1BE01D4AE511007C7FCE /* Hospital.swift */,
 				77535B271D52EE2B00391008 /* MapViewController.swift */,
+				7743F6941D58393A00FBA99E /* HospitalTableViewController.swift */,
 			);
 			path = BlackHospital;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				774CEFB41D41D44C006784EF /* AppDelegate.swift in Sources */,
+				7743F6951D58393A00FBA99E /* HospitalTableViewController.swift in Sources */,
 				773F1BE11D4AE511007C7FCE /* Hospital.swift in Sources */,
 				77535B281D52EE2B00391008 /* MapViewController.swift in Sources */,
 			);

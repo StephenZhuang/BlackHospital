@@ -23,6 +23,7 @@ class MapViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
         loadData()
         
         locationManager.delegate = self
@@ -81,7 +82,8 @@ class MapViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
         
         print("count = \(hospitals.count)")
     }
-
+    
+    //MARK: mapview delegate
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         
         if annotation is MKUserLocation {
@@ -105,31 +107,41 @@ class MapViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
         return pinView
     }
     
+    var locationUpdated = false
+    
     func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
-        //创建一个MKCoordinateSpan对象，设置地图的范围（越小越精确）
-        let latDelta = 0.5
-        let longDelta = 0.5
-        let currentLocationSpan:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, longDelta)
-        
-        //定义地图区域和中心坐标（
-        //使用自定义位置
-        let center:CLLocation = userLocation.location!
-        let currentRegion:MKCoordinateRegion = MKCoordinateRegion(center: center.coordinate,
-                                                                  span: currentLocationSpan)
-        
-        //设置显示区域
-        mapView.setRegion(currentRegion, animated: true)
+        if locationUpdated == false {
+            
+            //创建一个MKCoordinateSpan对象，设置地图的范围（越小越精确）
+            let latDelta = 0.5
+            let longDelta = 0.5
+            let currentLocationSpan:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, longDelta)
+            
+            //定义地图区域和中心坐标（
+            //使用自定义位置
+            let center:CLLocation = userLocation.location!
+            let currentRegion:MKCoordinateRegion = MKCoordinateRegion(center: center.coordinate,
+                                                                      span: currentLocationSpan)
+            
+            //设置显示区域
+            mapView.setRegion(currentRegion, animated: true)
+            locationUpdated = true
+        }
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "search" {
+            let vc = segue.destinationViewController as! HospitalTableViewController
+            vc.hospitals = hospitals
+        }
     }
-    */
+    
 
 }
